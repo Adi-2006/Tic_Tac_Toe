@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+     color: whitesmoke;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.maf{
+    background-color: #446699;
+   
+    padding-bottom: 3rem;
+
+    z-index: 5;
+}
+.navhead{
+    margin: auto;
+    width: 80%;
+
+    font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 0.5rem;
+}
+.gamecont{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem auto;
+}
+.phoneWala{
+    display: none;
+}
+.left{
+    display: grid;
+    grid-template-columns: repeat(3 ,8rem);
+    grid-template-rows: repeat(3,8rem);
+    padding: 2rem 0;
+    margin-left: 0;
+}
+.rightPhone{
+   display: none;
+}
+.box{
+    border: 2px solid rgb(21, 19, 19);
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: #FF2E63
+}
+.right{
+    padding: 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    color: whitesmoke;
+}
+.details{
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    gap: 1rem;
+}
+.info{
+    color: rgb(255, 242, 242);
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+.chance{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.x{
+    padding: 0.2rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    z-index: 5;
+
+}
+.Phoneeee{
+    display: none;
+}
+.mover{
+    height: 38px;
+    width: 65px;
+    position: absolute;
+    background-color: #FF2E63;
+    bottom: 0;
+    left: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    background-color: #FF2E63;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    /* opacity: 0.5; */
+}
+#reset:hover{
+    background-color: #08D9D6;
+    color: #fff;
+    opacity: 1;
+}
+.result{
+    margin: auto;
+    width: 80%;
+    height: 4rem;
+    font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(232, 205, 230);
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .left{
+        grid-template-columns: repeat(3 ,6rem);
+        grid-template-rows: repeat(3,6rem);
+    }
+}
+@media screen and (max-width:904px) {
+    .gamecont{
+       flex-direction: column;
+    }
+    .left{
+        grid-template-columns: repeat(3 ,8rem);
+        grid-template-rows: repeat(3,8rem);
+    }
+    .right{
+        display: none;
+    }
+    .rightPhone{
+        margin-top: 1rem;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .Phoneeee{
+        display: block;
+    }
+
+}
+@media screen and (max-width:630px) {
+    .navhead{
+       font-size:2rem;
+    }
+    .gamecont{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width:504px) {
+    .navhead{
+        font-size:1.7rem;
+     }
+     .laptopwala{
+        font-size: 1.4rem;
+     }
+}
+@media screen and (max-width:427px) {
+    .navhead{
+        font-size:1.3rem;
+        font-weight: 900;
+     }
+     .laptopwala{
+        font-size: 1.1rem;
+        font-weight: 900;
+     }
+     .left{
+        grid-template-columns: repeat(3 ,6rem);
+        grid-template-rows: repeat(3,6rem);
+    }
+}
